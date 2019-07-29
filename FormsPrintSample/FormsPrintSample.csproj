@@ -22,5 +22,12 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
     <Folder Include="Services\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\SamplePDF.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SamplePDF.pdf" />
   </ItemGroup>
 </Project>

@@ -143,5 +143,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_logo%403x.png" />
+    <BundleResource Include="Resources\ic_logo%402x.png" />
+    <BundleResource Include="Resources\ic_logo.png" />
   </ItemGroup>
 </Project>

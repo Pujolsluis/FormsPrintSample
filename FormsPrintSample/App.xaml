@@ -7,6 +7,6 @@
              x:Class="FormsPrintSample.App"
              xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms">
     <prism:PrismApplication.Resources>
-
+        
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>

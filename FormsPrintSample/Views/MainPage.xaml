@@ -4,15 +4,40 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
              x:Class="FormsPrintSample.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-        <Label Text="{Binding Test}" HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand"/>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button" x:Key="ButtonTealStyle">
+                <Setter Property="BackgroundColor" Value="Teal"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="CornerRadius" Value="48"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 Padding="16">
+        <Image Source="ic_logo"
+               HeightRequest="52"
+               WidthRequest="52"
+               Margin="0,0,0,32"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+        <Label Text="Welcome to Xamarin.Forms &#10; Print Sample!" 
+           HorizontalOptions="CenterAndExpand"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           Margin="16,16,16,32"/>
+        <Button Text="Pick Photo"
+                VerticalOptions="End"
+                Style="{StaticResource ButtonTealStyle}"
+                Command="{Binding OnPrintImageCommand}"/>
+        <Button Text="PRINT PDF"
+                VerticalOptions="End"
+                Margin="0,16,0,48"
+                Style="{StaticResource ButtonTealStyle}"
+                Command="{Binding OnPrintPDFCommand}"/>
     </StackLayout>
 
 </ContentPage>

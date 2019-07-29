@@ -1,5 +1,9 @@
 ﻿using System;
 using FormsPrintSample.ViewModels;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Prism;
 using Prism.Ioc;
 using Prism.Unity;
@@ -23,6 +27,8 @@ namespace FormsPrintSample
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterInstance<IMedia>(CrossMedia.Current);
+            containerRegistry.RegisterInstance<IPermissions>(CrossPermissions.Current);
         }
     }
 }
