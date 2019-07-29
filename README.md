@@ -6,5 +6,5 @@ Right now Xamarin Forms does not support printing out of the box, but the good n
 This repo is for the sample project of the [Printing PDF'S and Images Xamarin.Forms](https://www.pujolsluis.com/printing-pdfs-and-images-xamarin-forms/)
 
 <p align="center">
-<img src="https://github.com/Pujolsluis/FormsPrintSample/blob/master/arts/PrintingDemoXamarinFormsPujolsluis.gif" height="539" width="600" title="Print PDF's and Images Xamarin Forms Sample - Pujolsluis"/>
+<img src="https://github.com/Pujolsluis/FormsPrintSample/blob/master/arts/PrintingDemoXamarinFormsPujolsluis.gif" height="622" width="600" title="Print PDF's and Images Xamarin Forms Sample - Pujolsluis"/>
 </p>
