@@ -36,5 +36,11 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Needs Calendar Permission</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to photos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs access to microphone.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This app needs access to the photo gallery.</string>
 </dict>
 </plist>

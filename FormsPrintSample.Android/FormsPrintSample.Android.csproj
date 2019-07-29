@@ -73,6 +73,9 @@
     <PackageReference Include="Plugin.Permissions">
       <Version>3.0.0.12</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.5</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -103,6 +106,10 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\xml\file_paths.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -110,6 +117,7 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\xml\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FormsPrintSample\FormsPrintSample.csproj">
