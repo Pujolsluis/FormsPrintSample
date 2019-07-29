@@ -39,6 +39,7 @@ namespace FormsPrintSample.ViewModels
 
         async void PrintPDF()
         {
+            // Get Stream of Embedded PDF file
             Stream stream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("FormsPrintSample.Resources.SamplePDF.pdf");
             _printService.PrintPdfFile(stream);
         }
@@ -75,6 +76,7 @@ namespace FormsPrintSample.ViewModels
 
                     if (file != null)
                     {
+                        // Get stream of selected image and send to service
                         _printService.PrintImage(file.GetStream());
                     }
                 }
@@ -93,6 +95,7 @@ namespace FormsPrintSample.ViewModels
 
                     if (file != null)
                     {
+                        // Get stream of selected image and send to service
                         _printService.PrintImage(file.GetStream());
                     }
                 }

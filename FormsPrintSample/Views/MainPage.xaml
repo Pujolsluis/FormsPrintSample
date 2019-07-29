@@ -29,7 +29,7 @@
            VerticalOptions="Center"
            HorizontalTextAlignment="Center"
            Margin="16,16,16,32"/>
-        <Button Text="Pick Photo"
+        <Button Text="PRINT PHOTO"
                 VerticalOptions="End"
                 Style="{StaticResource ButtonTealStyle}"
                 Command="{Binding OnPrintImageCommand}"/>

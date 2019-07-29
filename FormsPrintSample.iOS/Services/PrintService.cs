@@ -25,18 +25,11 @@ namespace FormsPrintSample.iOS.Services
             {
 
                 var printInfo = UIPrintInfo.PrintInfo;
-
                 printInfo.OutputType = UIPrintInfoOutputType.General;
-
                 printInfo.JobName = "Print Job Name";
-
                 printer.PrintInfo = printInfo;
-
                 printer.PrintingItem = uiimage;
-
                 printer.ShowsPageRange = true;
-
-
 
                 var handler = new UIPrintInteractionCompletionHandler((printInteractionController, completed, error) =>
                 {
