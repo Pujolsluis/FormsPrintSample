@@ -66,6 +66,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="FodyWeavers.xml" />
+    <Compile Include="Services\PrintService.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -129,6 +130,9 @@
     <PackageReference Include="Prism.Unity.Forms">
       <Version>7.2.0.1367</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.5</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -136,5 +140,8 @@
       <Project>{C65B2BD6-D5E6-4B60-B668-E4D5BFB3EF3C}</Project>
       <Name>FormsPrintSample</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

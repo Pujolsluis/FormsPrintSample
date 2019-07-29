@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FormsPrintSample.iOS.Services;
+using FormsPrintSample.Services;
 using Foundation;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using Prism;
 using Prism.Ioc;
 using UIKit;
@@ -34,7 +37,8 @@ namespace FormsPrintSample.iOS
         {
             public void RegisterTypes(IContainerRegistry containerRegistry)
             {
-               
+                containerRegistry.RegisterInstance<IMedia>(CrossMedia.Current);
+                containerRegistry.RegisterInstance<IPrintService>(new PrintService());
             }
         }
     }

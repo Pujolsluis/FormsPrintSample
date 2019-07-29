@@ -9,6 +9,10 @@ using Android.OS;
 using Prism;
 using Prism.Ioc;
 using Plugin.Permissions;
+using Plugin.Media.Abstractions;
+using Plugin.Media;
+using FormsPrintSample.Services;
+using FormsPrintSample.Droid.Services;
 
 namespace FormsPrintSample.Droid
 {
@@ -25,6 +29,7 @@ namespace FormsPrintSample.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App(new AndroidInitialzer()));
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -37,7 +42,8 @@ namespace FormsPrintSample.Droid
         {
             public void RegisterTypes(IContainerRegistry containerRegistry)
             {
-                
+                containerRegistry.RegisterInstance<IMedia>(CrossMedia.Current);
+                containerRegistry.RegisterInstance<IPrintService>(new PrintService());
             }
         }
     }
