@@ -77,7 +77,7 @@ namespace FormsPrintSample.ViewModels
                     if (file != null)
                     {
                         // Get stream of selected image and send to service
-                        _printService.PrintImage(file.GetStream());
+                        _printService.PrintPdfFile(file.GetStream());
                     }
                 }
                 else if (action.Equals(PickPhoto))
@@ -96,7 +96,7 @@ namespace FormsPrintSample.ViewModels
                     if (file != null)
                     {
                         // Get stream of selected image and send to service
-                        _printService.PrintImage(file.GetStream());
+                        _printService.PrintPdfFile(file.GetStream());
                     }
                 }
             }
